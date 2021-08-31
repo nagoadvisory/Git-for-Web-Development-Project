@@ -1,0 +1,90 @@
+Link to finished codepen: https://codepen.io/nagoadvisory/pen/VwWeMxw?editors=1100
+
+1. What is Semantic HTML? Semantic HTML is when an element denotes something about the content
+
+2. What is HTML used for? HTML is code that we use to structure web page and content. In the examples that we've gone over, it's like the foundation of the house
+
+3. What is an attribute and where do we put it? Attributes define additional characteristics about an element (e.g., link). Attributes are always placed in the opening tag.
+
+4. What is the h1 tag used for? How many times should I use it on a page? H1 defines the most important heading. It should only be used once
+
+5. Name two tags that have required attributes. <img> and <a>
+
+6. What do we put in the head of our HTML document? <title>, <style>, etc. Head is a container for metadata (so not actually txt that shows up on a page)
+
+7. What is an id? This is a way of attributing uniqueness to a specific HTML element
+
+8. What elements can I add an id to? Pretty much all elements like h1 - h6, body, paragraph. It's not recommended to ID everything, instead to use classes.
+
+9. How many times can I use the same id on a page? IDs can be used once
+
+10. What is a class? Class is a way of attributing names (and thereby format-ability) to 1 or more HTML elements
+
+11. What elements can I add a class to? Pretty much all elements
+
+12. How many times can I use the same class on a page? Unlimited
+
+13. How do I get my link to open in a new tab? <a href="link you want to enter' target="_blank">. THE TARGET=_blank
+
+14. What is the alt attribute in the image tag used for? It's used to give information for those that can't see the image (ADA folk)
+
+15. How do I reference an id? IDs are referenced by # in CSS
+
+16. What is the difference between a section and a div? Section creates areas on the page that have logically connected content. Div is an empty container specifying a division or even a section
+
+17. What is CSS used for? We use CSS to style our HTML (to add some flair and beauty to the page)
+
+18. How to we select an element? Example - every h2 on the page. H2 is an element, so you could just use h2 {}. A class, we select with . in front, and id we select with # upfront
+
+19. What is the difference between a class and an id? - Give me an example of when I might use each one; ID is 1 unique, whereas a class can apply to multiple areas. Let's use navigation menu as an example. If we had multiple lines that needed formatting, I would define a class around it. If there was only 1 line that needed specific editing, I'd ID that line
+
+20. How do we select classes in CSS? Classes are selected with a period upfront; .class
+
+21. How do we select a p element within a single class of "human""? .human p {}
+
+22. What is a parent child selector? When would this be useful? This is used to select and format the "children" of a parent. This is useful if you need to format multiple items and have them standardized
+
+23. How do you select all links within a div with the class of sidebar? .class a {}
+
+24. What is a pseudo selector? A pseudo-class is used to define a special STATE of an element (for example, hover, once a site is visited/unvisited, when it's in focus)
+
+25. What do we use the change the spacing between lines? in CSS, you select the class and apply line-height: ___; 
+
+26. What do we use to change the spacing between letters? in CSS, you select the class and apply letter-spacing: _____;
+
+27. What do we use to to change everything to CAPITALS? lowercase? Capitalize? text-transform: uppercase, lowercase, or capitalize (in that order to answer your question)
+
+28. How do I add a 1px border around my div that is dotted and black? .divname {border: black; border-width: 1px; border-style: dotted;)
+
+29. How do I select everything on the page? Use the *; [https://www.w3schools.com/cssref/sel_all.asp](https://www.w3schools.com/cssref/sel_all.asp)
+
+30. How do I write a comment in CSS? /* ....................... comment..... */
+
+31. How do I find out what file I am in, when I am using the command line? **pwd?**
+
+32. Using the command line - how do I see a list of files/folders in my current folder? **ls**
+
+33. How do I remove a file via the command line? Why do I have to be careful with this? Using the **Rm** command with the **-r** option means recursive and deletes all files inside and then the parent directory itself. Important note: be very careful when using rm -r; with some systems, you won't be prompted before deleting the file. You could easily lose a lot of work!
+
+34. Why should I use version control? It's a way to easily spot changes in the code, especially with useful comments. Can you help you identify a version quickly.
+
+35. How often should I commit to github? Every 20 minutes or so
+
+36. What is the command we would use to push our repo up to github? **git add .** will add the repo changes and make them ready for committing.......**git commit -m "Your helpful commit message here"** will commit the changes with your specified commit message (commit message should explain what changes you've added to the repo that you are committing).....Push your changes back up to your Github repo......**git push -u origin branch-name** will push all of your commits from your local machine up onto github.......Remember that **branch-name** here will be whatever name you specified when you did **git checkout -b** (in the case it should be your firstname-lastname)
+
+37. Walk me through Lambda's git flow. 1st, you fork it. Then copy clone using SSH. git clone _____ ; enter SSH passphrase; cd into new rep; git checkout -b "your-name"; code . opens the current repo in VS code from terminal; do the work and save it. then git status, git commit -m "comment content", git push -u origin "your-name"...then go to repo on Github, select your name instead of master, create pull request, change base repository to mine, submit pull request, and copy URL ands submit
+
+Stretch Questions:
+1. What is the difference between an inline element and a block element? A block level element always starts on a new line and takes up the full width available; an inline element does NOT start on a new line and only takes up as much width as necessary
+
+2. What happens when an element is positioned absolutely? An absolutely positioned element no longer exists in the normal document flow. Instead, it sits on its own layer separate from everything else. This is very useful: it means that we can create isolated UI features that don't interfere with the layout of other elements on the page.  For example, popup information boxes, control menus, rollover panels, UI features that can be dragged and dropped anywhere on the page, and so on.
+
+3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? you would use flexbox properties; you can set a minimum (or an established) width and allow the height to take the space it needs (change as the window changes). You would utilize a combination of flex-grow, flex-basis, flex-shrink 
+
+4. Name 3 elements that are display block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+- 3 elements displayed as block: Paragraph, H1-H6, Nav,
+- 2 elements displayed inline by default: Span, IMG, 
+- 1 element that is display inline-block: button
+
+5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them?
+- in CSS a box wraps around every HTML element. It consists of margins, border, padding, and the inside content. You can set or change the width and height to move as window changes. You can use max or mins and flex (grow, shrink, basis) in conjuction to set widths
